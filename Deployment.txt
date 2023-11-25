@@ -1,0 +1,21 @@
+Setting up the production Database
+    planetscale.com
+
+Deploying to Vercel
+    1.  schema.prisma
+            datasource db {
+                ...
+                relationMode="prisma"
+            }
+    2.  Delete all migrations and regenerate
+    3.  Push to Github
+    4.  Go to 
+            vercel.com/new
+        i.      import from github repo
+                    Build command
+                        prisma generate && prisma migrate deploy && next build
+        ii.     Set Environment variables
+        iii.    Deploy now
+        iv.     Copy the address and go to settings go to environment vairables and 
+                change the NEXTAUTH_URL to paste it 
+    5.  Go to google console and add Authorized JavaScript origins
