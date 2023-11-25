@@ -1,0 +1,10 @@
+Error Tracking Tools
+    Before we deploy our application to production first we need to set 
+    up the error tracking and monitoring. because later on we deploy our 
+    application and other people use our application we don't know what 
+    errors we may encounter.
+    
+    There are many tools out There
+    1.  Sentry -- Recommended
+    2.  BugSnag
+    3.  LockRocket
